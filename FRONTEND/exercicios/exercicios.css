@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------------HEADER--------------- */
+
+header {
+    background-color: #bababa;
+    height: 230px;
+    padding: 32px;
+    display: grid;
+    grid-template-areas: "titulo som" "texto texto";
+    grid-template-columns: 70% 30%;
+    grid-row: 40% 60%;
+}
+
+header h3 {
+    grid-area: titulo;
+    color: #3FC500;
+    font-size: 45px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    padding-top: 25px;
+}
+
+header p {
+    grid-area: texto;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 340px;
+}
+
+header #som {
+    grid-area: som;
+    padding-bottom: 20px;
+}
+
+header button {
+    background-color: #bababa;
+}
+
+/* ----------------MAIN--------------- */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ir_para {
+    background-color: #D9D9D9;
+    width: 366px;
+    height: 190px;
+    margin-top: 36px;
+    border-radius: 20px;
+    align-items: center;
+    
+    display: grid;
+    grid-template-areas: "titulo som" "praticar praticar";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+}
+
+.titulos {
+    grid-area: titulo;
+    font-size: 36px;
+    padding-left: 20px;
+}
+
+.praticar {
+    grid-area: praticar;
+    font-size: 36px;
+    padding: 20px;
+    color: #3FC500;
+}
+
+.ir_para a {
+    text-decoration: none;
+}
+
+button {
+    width: 60px;
+    margin-right: 45px;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+#som {
+    grid-area: som;
+    color: white;
+    font-size: 70px;
+    padding-left: 23px;
+}
+
+#som:active {
+    color: #3FC500;
+}
+
+/* ---------FOOTER--------- */
+
+footer {
+    height: 106px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 6px solid #a7a5a5;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: white;
+}
+
+footer span.material-symbols-outlined {
+    font-size: 85px;
+    color: #a7a5a5;
+}
+
+#especial {
+    color: #3FC500;
+}

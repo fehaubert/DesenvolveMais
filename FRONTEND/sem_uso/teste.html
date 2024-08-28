@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Dinâmica</title>
+</head>
+<body>
+    <div id="content">
+    </div>
+
+    <script>
+        // Função para obter parâmetros da URL
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Função para carregar o conteúdo com base no parâmetro passado na URL
+        document.addEventListener("DOMContentLoaded", () => {
+            const contentDiv = document.getElementById("content");
+            const page = getParameterByName('content');
+
+            if (page === 'conteudo1') {
+                contentDiv.innerHTML = "<h1>Alfabeto</h1><p>O alfabeto português possui 26 letras, divididas em vogais e consoantes</p><h4>Vogais:</h4><ul><li>A, E, I O, U</li></ul><h4>Consoantes:</h4><ul><li>B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z</li></ul>";
+            } else if (page === 'conteudo2') {
+                contentDiv.innerHTML = "<h1>Página 2</h1><p>Este é o conteúdo da Página 2.</p>";
+            } else if (page === 'conteudo3') {
+                contentDiv.innerHTML = "<h1>Página 3</h1><p>Este é o conteúdo da Página 3.</p>";
+            } else {
+                contentDiv.innerHTML = "<h1>Página não encontrada</h1><p>A página solicitada não existe.</p>";
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração de formulário com API</title>
+</head>
+
+<body>
+    <h2>Formulário</h2>
+
+    <p id="nome" name="nome"></p><br>
+
+    <p id="descricao" name="descricao"></p><br><br>
+
+    <button id="handleSubmit">Enviar</button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo do Banco de Dados</title>
+    <style>
+        /* Estilos opcionais para melhorar a apresentação */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content-item {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conteúdo do Banco de Dados</h1>
+        <button id="fetchContent">Buscar Conteúdo</button>
+        <div id="content"></div>
+    </div>
+
+    <script src="conteúdos-português.js"></script>
+</body>
+</html> -->

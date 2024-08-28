@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------------HEADER--------------- */
+
+header {
+    height: 225px;
+}
+
+/* ----------------MAIN--------------- */
+
+main {
+    padding: 0px 25px;
+}
+
+main h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#email {
+    background-color: #D9D9D9;
+    width: 374px;
+    height: 67px;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    color: rgb(119, 119, 119);
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+#password {
+    background-color: #D9D9D9;
+    width: 374px;
+    height: 67px;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    color: rgb(119, 119, 119);
+    margin-bottom: 13px;
+    padding-left: 15px;
+}
+
+#esqueceu-senha {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 8px;
+}
+
+#entrar {
+    text-align: center;
+    width: 380px;
+    height: 67px;
+    font-size: 28px;
+    border-radius: 20px;
+    padding: 15px 0px;
+    border: none;
+    background-color: #3FC500;
+    color: white;
+    margin: 25px 5px;
+}
+
+#enviar:hover {
+    color: white;
+    box-shadow: 0px 0px 2px #308508;
+    background-color: #3ba709;
+}
+
+/* main p {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.continuar-google {
+    background-color: #40BCE3;
+    color: white;
+    width: 374px;
+    height: 67px;
+    align-items: center;
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#google {
+    width: 42px;
+    height: 42px;
+}
+
+#texto-google {
+    font-size: 23px;
+    padding-top: 27px;
+}
+
+.continuar-facebook {
+    background-color: #1976D2;
+    color: white;
+    width: 374px;
+    height: 67px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#facebook {
+    width: 42px;
+    height: 42px;
+}
+
+#texto-facebook {
+    font-size: 23px;
+    padding-top: 30px;
+} */
+
+#cadastrar {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0px 10px;
+}

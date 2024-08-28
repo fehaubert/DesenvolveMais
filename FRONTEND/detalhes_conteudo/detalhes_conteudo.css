@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------MAIN--------- */
+
+main {
+    padding: 45px 32px;
+    display: grid;
+    grid-template-areas: "titulo som" "conteudo conteudo" "voltar voltar";
+    grid-template-columns: 70% 30%;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: #3FC500;
+}
+
+#botao_som {
+    width: 100px;
+    border: none;
+    background-color: #fff;
+}
+
+#som {
+    grid-area: som;
+    color: #a7a5a5;
+    font-size: 70px;
+    padding-top: 10px;
+}
+
+#som:active {
+    color: #3FC500;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+a {
+    grid-area: voltar;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+#voltar {
+    grid-area: voltar;
+    background-color: #3FC500;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    padding: 10px 0px;
+    border: 2px solid #308508;
+}
+
+#voltar:hover {
+    box-shadow: 0px 0px 2px #308508;
+    background-color: #3ba709;
+}
+
+/* ---------FOOTER--------- */
+
+footer {
+    height: 106px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 6px solid #a7a5a5;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: white;
+}
+
+footer span.material-symbols-outlined {
+    font-size: 85px;
+    color: #a7a5a5;
+}
+
+#especial {
+    color: #3FC500;
+}

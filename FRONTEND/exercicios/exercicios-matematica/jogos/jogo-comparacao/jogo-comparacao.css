@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #3FC500;
+    font-size: 2.1em;
+}
+
+#comparacao {
+    font-size: 30px;
+}
+
+input {
+    padding: 15px;
+    width: 60%;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#botao-enviar {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #3FC500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#botao-enviar:hover {
+    background-color: #2f9400;
+}
+
+#botao-reiniciar {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    color: #fff;
+    background-color: #3FC500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botao-reiniciar:hover {
+    background-color: #2f9400;
+}
+
+#botao-voltar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #3FC500;
+    border: 4px solid #3FC500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botao-voltar:hover {
+    background-color: #2f9400;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+#mensagem-final h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#pontos-finais {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* ---------FOOTER--------- */
+
+footer {
+    height: 106px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 6px solid #a7a5a5;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+footer span.material-symbols-outlined {
+    font-size: 85px;
+    color: #a7a5a5;
+}
+
+#especial {
+    color: #3FC500;
+}

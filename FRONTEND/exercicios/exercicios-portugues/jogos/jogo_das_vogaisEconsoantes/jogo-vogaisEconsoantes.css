@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #D9D9D9;
+}
+
+/* ---------MAIN--------- */
+
+main {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.area-de-jogo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instrucao {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#letra {
+    font-size: 3em;
+    font-weight: bold;
+    color: #2f4f4f;
+    padding: 20px;
+    border: 3px solid #3FC500;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.selecionar {
+    margin: 20px 0;
+}
+
+.selecionar-botao {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3FC500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 0 10px;
+}
+
+.selecionar-botao:hover {
+    background-color: #2f9400;
+}
+
+.botao-reiniciar {
+    padding: 10px 20px;
+    margin-left: 96px;
+    font-size: 1.3em;
+    color: #fff;
+    background-color: #3FC500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-reiniciar:hover {
+    background-color: #2f9400;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+#mensagem-final p {
+    font-size: 30px;
+}
+
+#botao-voltar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #3FC500;
+    border: 4px solid #3FC500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botao-voltar:hover {
+    background-color: #2f9400;
+}
+
+/* ---------FOOTER--------- */
+
+footer {
+    height: 106px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 6px solid #a7a5a5;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+footer span.material-symbols-outlined {
+    font-size: 85px;
+    color: #a7a5a5;
+}
+
+#especial {
+    color: #3FC500;
+}

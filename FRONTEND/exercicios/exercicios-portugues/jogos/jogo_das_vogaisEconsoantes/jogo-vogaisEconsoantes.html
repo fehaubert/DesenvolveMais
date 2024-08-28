@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo-vogaisEconsoantes.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Jogo do Alfabeto</title>
+</head>
+
+<body>
+    <main>
+        <h1>Jogo das Vogais e Consoantes</h1>
+        <div class="area-de-jogo">
+            <p class="instrucao" id="hidden">Clique se a letra é uma vogal ou consoante:</p>
+            <div id="letra">A</div>
+            <div class="selecionar">
+                <button id="botao-vogal" class="selecionar-botao">Vogal</button>
+                <button id="botao-consoante" class="selecionar-botao">Consoante</button>
+            </div>
+            <p id="feedback"></p>
+            <div id="mensagem-final" class="hidden">
+                <p>Você terminou o jogo!</p>
+                <button id="botao-resetar" class="botao-reiniciar">Reiniciar Jogo</button>
+                <button id="botao-voltar">Voltar à Tela de Jogos</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="../../../../tela_principal/home.html"><span class="material-symbols-outlined">
+                home
+            </span></a>
+        <a href="../../../../materias/materias.html"><span class="material-symbols-outlined">
+                menu_book
+            </span></a>
+        <a href="#"><span id="especial" class="material-symbols-outlined">
+                exercise
+            </span></a>
+        <a href="../../../../perfil/perfil.html"><span class="material-symbols-outlined">
+                person
+            </span></a>
+    </footer>
+
+    <script src="jogo-vogaisEconsoantes.js"></script>
+</body>
+
+</html>

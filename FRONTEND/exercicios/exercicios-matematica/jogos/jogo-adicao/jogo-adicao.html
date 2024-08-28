@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo-adicao.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Jogo de Adição</title>
+</head>
+
+<body>
+    <main>
+        <h1>Joguinho de Adição</h1>
+        <div id="area-de-jogo">
+            <p id="equação">Quanto é <span id="num1"></span> + <span id="num2"></span>?</p>
+            <input type="number" id="resposta" placeholder="Digite a resposta">
+            <button id="botao-enviar" onclick="checkAnswer()">Enviar</button>
+            <p id="resultado"></p>
+        </div>
+        <div id="mensagem-final" class="hidden">
+            <h2>Você terminou o jogo!</h2>
+            <p id="pontos-finais"></p>
+            <button id="botao-reiniciar" onclick="resetGame()">Reiniciar Jogo</button>
+            <button id="botao-voltar" onclick="goToHom3e()">Voltar à Tela de Jogos</button>
+        </div>
+    </main>
+
+    <footer>
+        <a href="../../../../tela_principal/home.html"><span class="material-symbols-outlined">
+                home
+            </span></a>
+        <a href="../../../../materias/materias.html"><span class="material-symbols-outlined">
+                menu_book
+            </span></a>
+        <a href="#"><span id="especial" class="material-symbols-outlined">
+                exercise
+            </span></a>
+        <a href="../../../../perfil/perfil.html"><span class="material-symbols-outlined">
+                person
+            </span></a>
+    </footer>
+
+    <script src="jogo-adicao.js"></script>
+</body>
+
+</html>
+

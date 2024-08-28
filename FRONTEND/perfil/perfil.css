@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d8d8d8;
+}
+
+/* -----------------HEADER---------------------- */
+
+header {
+    display: flex;
+    align-items: center;
+
+}
+
+header img {
+    margin-left: 25px;
+}
+
+/* --------------------MAIN------------------------ */
+
+main {
+    border-radius: 0PX 10px;
+    overflow: hidden;
+    padding-bottom: 90px;
+}
+
+.secao-perfil {
+    padding: 10px 20px 20px 20px;
+}
+
+.informacoes {
+    text-align: left;
+}
+
+.informacoes .informacao {
+    color: #3FC500;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.informacoes h1 {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+.data-criacao {
+    font-size: 20px;
+    color: #555;
+}
+
+.configuracoes,
+.acoes {
+    background-color: #fff;
+    padding: 30px 20px 5px 20px;
+    border-bottom: 2px solid #d8d8d8;
+}
+
+.configuracoes .alternancia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.configuracoes .alternancia span {
+    font-size: 24px;
+    /* color: #000; */
+}
+
+.configuracoes .alternancia input {
+    transform: scale(1.5);
+}
+
+.acoes {
+    padding-bottom: 30px;
+}
+
+.acoes .botoes {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.acoes .sair {
+    margin-top: 20px;
+    border: 4px solid #FF4D4D;
+    background-color: white;
+    color: #FF4D4D;
+}
+
+.acoes .deletar {
+    background-color: #FF4D4D;
+    color: #fff;
+}
+
+.acoes p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+/* ---------FOOTER--------- */
+
+footer {
+    height: 106px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 6px solid #a7a5a5;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: white;
+}
+
+footer span.material-symbols-outlined {
+    font-size: 85px;
+    color: #a7a5a5;
+}
+
+#especial {
+    color: #3FC500;
+}
+
+/* ----------------ALERT--------------------- */
+
+.swal{
+    text-align: center;
+}
+
+.swal-text {
+    font-size: 32px;
+    text-align: center;
+    color: #000;
+}
+
+.swal-button {
+    border: none;
+    padding: 20px 22px;
+    font-size: 23px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.swal-button--cancel {
+    background-color: #28a745;
+}
+
+.swal-button--confirm {
+    background-color: #dc3545;
+}

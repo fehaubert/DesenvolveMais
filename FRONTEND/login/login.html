@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Desenvolve+</title>
+</head>
+<body>
+    <header>
+        <img src="../img/Desenvolve+.png" alt="Logo Desenvolve+">
+    </header>
+
+    <main>
+        <h2>Faça login</h2>
+
+        <input id="email" type="email" placeholder="E-mail ou telefone" required>
+        <input id="password" type="password" placeholder="Senha" required>
+        <a id="esqueceu-senha" href="esqueceu-senha.html">Esqueceu a senha?</a>
+        <!-- <a href="../home.html"> -->
+            <button id="entrar" onclick="handleSubmit(event)">Entrar</button>
+        <!-- </a> -->
+        <!-- <p>ou</p>
+        <div class="continuar-google">
+            <img id="google" src="../img/google.png" alt="Logo do google">
+            <p id="texto-google">Continuar com o Google</p>
+        </div>
+        <div class="continuar-facebook">
+            <img id="facebook" src="../img/facebook.png" alt="Logo do facebook">
+            <p id="texto-facebook">Continuar com o Facebook</p>
+        </div> -->
+        <a id="cadastrar" href="../cadastro/cadastro.html">Não possui uma conta? Cadastre-se!</a>
+    </main>
+
+    <script src="./login.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
+
+

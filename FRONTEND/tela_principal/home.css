@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------------HEADER--------------- */
+
+header {
+    background-color: #bababa;
+    height: 230px;
+    padding: 32px;
+    display: grid;
+    grid-template-areas: "titulo som" "texto texto";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 40% 60%;
+}
+
+header h3 {
+    grid-area: titulo;
+    color: #3FC500;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    padding-top: 25px;
+}
+
+header p {
+    grid-area: texto;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 340px;
+}
+
+header #som {
+    grid-area: som;
+    padding-bottom: 20px;
+}
+
+header button {
+    background-color: #bababa;
+}
+
+/* ----------------MAIN--------------- */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.acompanhamento-de-progresso {
+    background-color: #D9D9D9;
+    width: 366px;
+    height: 134px;
+    margin-top: 36px;
+    border-radius: 20px;
+    align-items: center;
+
+    display: grid;
+    grid-template-areas: "titulo som" "progresso progresso";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 70% 30%;
+}
+
+.acompanhamento-de-progresso p {
+    grid-area: titulo;
+    font-size: 28px;
+    width: 230px;
+    padding: 10px 0px 0px 15px;
+}
+
+button {
+    width: 60px;
+    margin-right: 45px;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+#som {
+    grid-area: som;
+    color: white;
+    font-size: 70px;
+    padding-left: 23px;
+}
+
+#som:active {
+    color: #3FC500;
+}
+
+.barra_de_progresso {
+    grid-area: progresso;
+    width: 336px;
+    height: 18px;
+    accent-color: #3FC500;
+    margin: 0px 15px;
+    display: flex;
+}
+
+.ir_para {
+    background-color: #D9D9D9;
+    width: 366px;
+    height: 92px;
+    margin-top: 36px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ir_para a {
+    color: black;
+    text-decoration: none;
+}
+
+.titulos {
+    font-size: 35px;
+    padding-left: 20px;
+}
+
+.ir_para #som {
+    padding-right: 20px;
+}
+
+/* ---------FOOTER--------- */
+
+footer {
+    height: 106px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 6px solid #a7a5a5;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: white;
+}
+
+footer span.material-symbols-outlined {
+    font-size: 85px;
+    color: #a7a5a5;
+}
+
+#especial {
+    color: #3FC500;
+}
+
+
+
+/* .acompanhamento-de-progresso {
+    background-color: #D9D9D9;
+    width: 366px;
+    margin-top: 36px;
+    border-radius: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "titulo som"
+                         "progresso progresso"
+                         "checkbox checkbox"
+                         "Update Update";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 40% 20% 30% 10%;
+    padding: 10px;
+}
+
+#progress-container {
+    grid-area: progresso;
+    margin: 10px 15px;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#barra_de_progresso {
+    width: 0%;
+    height: 30px;
+    background-color: green;
+    border-radius: 50px;
+}
+
+.checkbox-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.checkbox-row {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 15px; 
+    padding: 10px 15px;
+    flex-wrap: wrap; 
+}
+
+.check {
+    transform: scale(1.5);
+    margin-right: 5px; 
+}
+
+.check {
+    transform: scale(1.5);
+}
+
+.buttonHold {
+    grid-area: Update;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.buttonHold .button {
+    width: 60px;
+    margin-right: 45px;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+button {
+    width: 60px;
+    margin-right: 45px;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+#som {
+    grid-area: som;
+    color: white;
+    font-size: 70px;
+    padding-left: 23px;
+}
+
+#som:active {
+    color: #3FC500;
+} */

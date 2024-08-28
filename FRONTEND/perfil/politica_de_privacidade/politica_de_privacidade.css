@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d8d8d8;
+}
+
+/* ---------MAIN--------- */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 140px;
+}
+
+section {
+    width: 339px;
+    height: 130vh;
+    background-color: #F0EFEF;
+    padding: 50px;
+}
+
+section h3 {
+    font-size: 27px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+#aceitar {
+    text-align: center;
+    width: 280px;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px 0px;
+    border: none;
+    background-color: #3FC500;
+    color: white;
+    margin-top: 20px;
+}
+
+#aceitar:hover {
+    color: white;
+    box-shadow: 0px 0px 2px #308508;
+    background-color: #3ba709;
+}
+
+/* ---------FOOTER--------- */
+
+footer {
+    height: 106px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 6px solid #a7a5a5;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: white;
+}
+
+footer span.material-symbols-outlined {
+    font-size: 85px;
+    color: #a7a5a5;
+}
+
+#especial {
+    color: #3FC500;
+}

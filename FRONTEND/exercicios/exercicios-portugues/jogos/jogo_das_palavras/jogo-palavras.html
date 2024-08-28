@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo-palavras.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Formação de Frases</title>
+</head>
+
+<body>
+    <main>
+        <h1>Jogo de Formação de Frases</h1>
+        <section class="area-de-jogo">
+            <p class="instrucao">Clique nas palavras na ordem correta para formar a frase:</p>
+            <div id="words" class="words"></div>
+            <div id="phrase" class="phrase"></div>
+            <p id="feedback"></p>
+            <button id="botaoRefazer" class="botao-refazer" style="display:none;">Tentar Novamente</button>
+            <div id="mensagemFinal" class="mensagem-final" style="display:none;">
+                <p>Parabéns! Você completou todas as frases!</p>
+                <button id="botao-resetar" class="botao-reiniciar">Reiniciar Jogo</button>
+                <button id="botaoVoltar" class="botao-voltar">Voltar à Tela de Jogos</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="../../../../tela_principal/home.html"><span class="material-symbols-outlined">
+                home
+            </span></a>
+        <a href="../../../../materias/materias.html"><span class="material-symbols-outlined">
+                menu_book
+            </span></a>
+        <a href="#"><span id="especial" class="material-symbols-outlined">
+                exercise
+            </span></a>
+        <a href="../../../../perfil/perfil.html"><span class="material-symbols-outlined">
+                person
+            </span></a>
+    </footer>
+
+    <script src="jogo-palavras.js"></script>
+</body>
+
+</html>
