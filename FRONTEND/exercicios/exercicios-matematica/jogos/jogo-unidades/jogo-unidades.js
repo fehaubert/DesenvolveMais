@@ -23,7 +23,7 @@ function checkAnswer() {
     const correctAnswer = centenas * 100 + dezenas * 10 + unidades;
     
     if (userAnswer === correctAnswer) {
-        document.getElementById('resultado').innerText = 'Correto! 🎉';
+        document.getElementById('resultado').innerText = 'Correto!';
         correctAnswers++;
     } else {
         document.getElementById('resultado').innerText = `Errado! A resposta certa era ${correctAnswer}.`;
