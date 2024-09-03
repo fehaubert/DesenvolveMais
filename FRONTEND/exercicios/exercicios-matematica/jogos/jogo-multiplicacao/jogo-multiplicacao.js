@@ -21,7 +21,7 @@ function checkAnswer() {
     const correctAnswer = num1 * num2;
     
     if (userAnswer === correctAnswer) {
-        document.getElementById('resultado').innerText = 'Correto! 🎉';
+        document.getElementById('resultado').innerText = 'Correto!';
         correctAnswers++;
     } else {
         document.getElementById('resultado').innerText = `Errado! A resposta certa era ${correctAnswer}.`;
