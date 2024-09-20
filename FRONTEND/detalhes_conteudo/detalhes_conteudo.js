@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
     const nomeConteudo = urlParams.get('content');
     console.log("Parâmetro content:", nomeConteudo);
@@ -21,6 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         `<a href="../materias/materias.html">
                             <button id="voltar"> Voltar </button>
                         </a>`;
+
+                    const botaoSom = document.getElementById('botao_som');
+                    botaoSom.addEventListener('click', function () {
+                        lerTextoEmVozAlta(data.conteudo.nome);
+                        lerTextoEmVozAlta(data.conteudo.conteudo);
+                    });
                 } else {
                     alert("Conteúdo não encontrado!");
                 }
@@ -33,3 +39,14 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Nenhum conteúdo selecionado!");
     }
 });
+
+function lerTextoEmVozAlta(texto) {
+    const synth = window.speechSynthesis;
+    const utterance = new SpeechSynthesisUtterance(texto);
+
+    utterance.lang = 'pt-BR';
+    utterance.pitch = 1;
+    utterance.rate = 1;
+
+    synth.speak(utterance);
+}

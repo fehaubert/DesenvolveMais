@@ -17,19 +17,31 @@
     <main>
         <section class="secao-perfil">
             <div class="informacoes">
-                <p class="informacao">Nome</p>
-                <h1 class="nome">Nome do Usuário</h1> <!-- Adicionada a classe 'nome' -->
-                <p class="informacao">Email</p>
-                <h1 class="email">email@example.com</h1> <!-- Adicionada a classe 'email' -->
-                <p class="data-criacao">Conta criada em DD/MM/YYYY</p> <!-- A classe 'data-criacao' deve ser mantida -->
-            </div>                    
+                <div class="edit">
+                    <p class="informacao">Nome</p>
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </div>
+                <h1 class="nome">Nome do Usuário</h1>
+
+                <div class="edit">
+                    <p class="informacao">Email</p>
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </div>
+                <h1 class="email">email@example.com</h1>
+
+                <p class="data-criacao">Conta criada em DD/MM/YYYY</p>
+            </div>
         </section>
-        <section class="configuracoes">
+        <!-- <section class="configuracoes">
             <div class="alternancia">
                 <span>Receber notificação</span>
                 <input type="checkbox" id="alternanciaNotificacao">
             </div>
-        </section>
+        </section> -->
         <section class="acoes">
             <a href="./termos_de_uso/termos_de_uso.html">
                 <button class="botoes">Termos de uso</button>
@@ -64,4 +76,5 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
+
 </html>

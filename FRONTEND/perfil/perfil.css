@@ -51,6 +51,16 @@ main {
     font-weight: 400;
 }
 
+.edit{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.edit span {
+    margin-top: 5px;
+}
+
 .data-criacao {
     font-size: 20px;
     color: #555;

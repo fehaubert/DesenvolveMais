@@ -10,8 +10,9 @@
 
 main {
     padding: 45px 32px;
+    padding-bottom: 125px;
     display: grid;
-    grid-template-areas: "titulo som" "conteudo conteudo" "voltar voltar";
+    grid-template-areas: "titulo som" "conteudo1 conteudo1" "conteudo2 conteudo2" "titulo_exemplo titulo_exemplo" "exemplo exemplo" "voltar voltar";
     grid-template-columns: 70% 30%;
 }
 
@@ -40,10 +41,29 @@ main {
     color: #3FC500;
 }
 
-.conteudo {
-    grid-area: conteudo;
+.conteudo1 {
+    grid-area: conteudo1;
     font-size: 30px;
     margin-top: 25px;
+}
+
+.conteudo2 {
+    grid-area: conteudo2;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+h4 {
+    grid-area: titulo_exemplo;
+    color: #3FC500;
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+.exemplo {
+    grid-area: exemplo;
+    font-size: 30px;
+    margin-top: 15px;
 }
 
 a {
@@ -92,6 +112,7 @@ footer {
 footer span.material-symbols-outlined {
     font-size: 85px;
     color: #a7a5a5;
+    padding-bottom: 30px;
 }
 
 #especial {
