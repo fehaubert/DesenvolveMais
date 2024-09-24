@@ -17,15 +17,20 @@ document.addEventListener("DOMContentLoaded", function () {
                                 volume_up
                             </span>
                          </button>` +
-                        `<p class="conteudo">${data.conteudo.conteudo}</p>` +
+                        `<p class="conteudo1" id="texto">${data.conteudo.conteudo1}</p>` +
+                        `<p class="conteudo2" id="texto">${data.conteudo.conteudo2}</p>` +
+                        `<br>` +
+                        `<h4> Exemplo: </h4>` +
+                        `<p class="exemplo" id="texto">${data.conteudo.exemplo}</p>` +
                         `<a href="../materias/materias.html">
                             <button id="voltar"> Voltar </button>
                         </a>`;
 
                     const botaoSom = document.getElementById('botao_som');
                     botaoSom.addEventListener('click', function () {
-                        lerTextoEmVozAlta(data.conteudo.nome);
-                        lerTextoEmVozAlta(data.conteudo.conteudo);
+                        lerTextoEmVozAlta(data.conteudo.conteudo1);
+                        lerTextoEmVozAlta(data.conteudo.conteudo2);
+                        lerTextoEmVozAlta(data.conteudo.exemplo);
                     });
                 } else {
                     alert("Conteúdo não encontrado!");
