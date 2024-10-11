@@ -23,7 +23,7 @@ async function getConteudos() {
         conteudos.forEach((conteudos, index) => {
             let page = conteudos.nome.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
-            let card = `<section class='ir_para'> 
+            let card = `<section class='ir_para portugues'> 
                 <p id='conteudo-${index}' class='titulos'>${conteudos.nome}</p>
                 <button class="botao_som" data-text="conteudo-${index}">
                     <span id='som' class='material-symbols-outlined'>volume_up</span>

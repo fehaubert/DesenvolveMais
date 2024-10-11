@@ -9,7 +9,9 @@
 /* ----------------HEADER--------------- */
 
 header {
-    height: 225px;
+    display: flex;
+    text-align: center;
+    height: 185px;
 }
 
 /* ----------------MAIN--------------- */
@@ -101,12 +103,93 @@ main h2 {
 }
 
 #entrar {
+    display: flex;
+    justify-content: center;
     color: black;
     font-size: 20px;
     text-decoration: none;
-    padding: 0px 50px;
 }
 
 input:hover {
     color: black;
+}
+
+main a span {
+    margin-left: 6px;
+}
+
+
+@media screen and (min-width:1536px) and (max-width:1537px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+    }
+
+    img {
+        width: 500px;
+        margin-top: 0px
+    }
+
+    main {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main h2 {
+        margin-top: 0px;
+        font-size: 35px;
+    }
+
+    #nome {
+        width: 674px;
+        height: 65px;
+    }
+
+    #email {
+        width: 674px;
+        height: 65px;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    #password {
+        width: 674px;
+        height: 65px;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    #confirme-senha {
+        width: 674px;
+        height: 65px;
+    }
+
+    #handleSubmit {
+        width: 674px;
+        height: 70px;
+        margin-top: 20px;
+    }
+
+    #entrar {
+        font-size: 25px;
+    }
+
+    span{
+        margin-left: 6px;
+        transition: all .55s ease-in-out;
+        text-decoration: underline;
+        transform: scaleX(0.9);
+        letter-spacing: 1px;
+    }
+
+    span:hover{
+        color:#3FC500;
+        text-decoration: none;
+        transform: scaleX(0.95);
+    }
 }

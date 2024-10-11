@@ -1,7 +1,7 @@
 let num1, num2;
 let correctAnswers = 0;
 let totalQuestions = 0;
-const maxQuestions = 15;
+const maxQuestions = 1;
 
 function generateEquacao() {
     if (totalQuestions < maxQuestions) {
@@ -28,7 +28,7 @@ function checkAnswer() {
     }
 
     totalQuestions++;
-    setTimeout(generateEquacao, 5000);
+    setTimeout(generateEquacao, 3000);
 }
 
 function endGame() {
@@ -46,7 +46,7 @@ function resetGame() {
 }
 
 function goToHome() {
-    window.location.href = '../../../../exercicios/exercicios-matematica/exercicios-matematica.html';
+    window.location.href = '../../exercicios-matematica.html';
 }
 
 generateEquacao();

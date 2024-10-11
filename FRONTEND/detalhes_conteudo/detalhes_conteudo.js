@@ -11,12 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     const conteudosContainer = document.getElementById("conteudos");
 
                     conteudosContainer.innerHTML =
-                        `<h2 class="titulo">${data.conteudo.nome}</h2>` +
-                        `<button id="botao_som">
-                            <span id="som" class="material-symbols-outlined">
-                                volume_up
-                            </span>
-                         </button>` +
+                        `<div class = "title-container">` +
+                            `<h2 class="titulo">${data.conteudo.nome}</h2>` +
+                            `<button id="botao_som">
+                                <span id="som" class="material-symbols-outlined">
+                                    volume_up
+                                </span>
+                            </button>` +
+                         `</div>` +
                         `<p class="conteudo1" id="texto">${data.conteudo.conteudo1}</p>` +
                         `<p class="conteudo2" id="texto">${data.conteudo.conteudo2}</p>` +
                         `<br>` +

@@ -30,7 +30,7 @@ function checkAnswer() {
     }
 
     totalQuestions++;
-    setTimeout(generateEquacao, 5000);
+    setTimeout(generateEquacao, 3000);
 }
 
 function endGame() {
@@ -48,7 +48,7 @@ function resetGame() {
 }
 
 function goToHome() {
-    window.location.href = '../../../../exercicios/exercicios-matematica/exercicios-matematica.html';
+    window.location.href = '../../exercicios-matematica.html';
 }
 
 generateEquacao();

@@ -68,7 +68,55 @@ async function deleteConta(request, response) {
     });
 }
 
+async function updateUser(request, response) {
+    const userId = request.body.cliente_id;
+    const { nome, email } = request.body;
+
+    if (!userId) {
+        return response.status(401).json({
+            success: false,
+            message: "Usuário não autenticado."
+        });
+    }
+
+    console.log(nome)
+    console.log("xxx", request.body)
+    let query = '';
+    let params = []
+    if(!email) {
+        query = "UPDATE users SET name = ?, updated_at = current_timestamp WHERE id = ?;";
+        params = [nome, userId];
+    } else {
+        query = "UPDATE users SET email = ?, updated_at = current_timestamp WHERE id = ?;";     
+        params = [email, userId];  
+    }
+
+     
+    connection.query(query, params, (err, results) => {
+        if (err) {
+            console.error("Erro ao atualizar dados do usuário:", err);
+            return response.status(500).json({
+                success: false,
+                message: "Erro ao atualizar dados."
+            });
+        }
+
+        if (results.affectedRows > 0) {
+            return response.status(200).json({
+                success: true,
+                message: "Dados atualizados com sucesso!"
+            });
+        } else {
+            return response.status(404).json({
+                success: false,
+                message: "Usuário não encontrado."
+            });
+        }
+    });
+}
+
 module.exports = {
     storeUser,
-    deleteConta
+    deleteConta,
+    updateUser
 };

@@ -123,3 +123,95 @@ footer span.material-symbols-outlined {
     color: #3FC500;
 }
 
+footer img {
+    display: none;
+}
+
+@media screen and (min-width:1536px) and (max-width:1537px) {
+
+    /* ---------MAIN--------- */
+
+    main {
+        margin-top: 100px;
+    }
+
+    #botao-enviar {
+        padding: 18px 30px;
+        margin-top: 12px;
+    }
+
+    #botao-reiniciar {
+        margin-top: 10px;
+        padding: 13px 20px;
+        font-size: 1.3em;
+        color: #fff;
+        background-color: #3FC500;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #botao-reiniciar:hover {
+        background-color: #2f9400;
+    }
+    
+    #botao-voltar {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        color: #3FC500;
+        border: 4px solid #3FC500;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #botao-voltar:hover {
+        background-color: #3FC500;
+        border: 4px solid #3FC500;
+        color: white;
+    }
+
+    /* ---------FOOTER--------- */
+
+    footer {
+        height: 120px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top: 0px solid #a7a5a5;
+        border-bottom: 6px solid #a7a5a5;
+        position: fixed;
+        top: 0;
+    }
+
+    footer span.material-symbols-outlined {
+        font-size: 85px;
+        color: #a7a5a5;
+        transition: all .55s ease-in-out;
+        transform: scaleX(0.9);
+    }
+
+    footer span.material-symbols-outlined:hover {
+        color: #3FC500;
+        transform: scaleX(0.95);
+    }
+
+    footer img {
+        display: flex;
+        height: 170px;
+    }
+
+    footer h3 {
+        display: none;
+    }
+
+    footer span.material-symbols-outlined {
+        font-size: 85px;
+        color: #a7a5a5;
+    }
+
+    #especial {
+        color: #3FC500;
+    }
+}

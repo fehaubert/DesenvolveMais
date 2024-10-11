@@ -1,11 +1,31 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const userNameElement = document.getElementById('user-name');
+// -------------NOME-------------------
+document.addEventListener('DOMContentLoaded', () => {
+    const userId = localStorage.getItem('userId');
 
-    const userName = localStorage.getItem('userName');
-
-    if (userName && userNameElement) {
-        userNameElement.textContent = userName;
+    if (!userId) {
+        swal("Erro", "ID do usuário não encontrado no localStorage.", "error");
+        return;
     }
+
+    fetch('http://localhost:3005/api/profile', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ cliente_id: userId })
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                document.getElementById('user-name').textContent = data.data.name;
+                nome = data.data.name;
+            } else {
+                swal("Erro ao carregar o nome", data.message, "error");
+            }
+        })
+        .catch(error => {
+            swal("Erro ao carregar o nome", error.message, "error");
+        });
 });
 
 // -------------LEITOR-------------------

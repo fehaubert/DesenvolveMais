@@ -9,7 +9,9 @@
 /* ----------------HEADER--------------- */
 
 header {
-    height: 225px;
+    display: flex;
+    text-align: center;
+    height: 185px;
 }
 
 /* ----------------MAIN--------------- */
@@ -50,13 +52,6 @@ main h2 {
     padding-left: 15px;
 }
 
-#esqueceu-senha {
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-    padding-left: 8px;
-}
-
 #entrar {
     text-align: center;
     width: 380px;
@@ -76,59 +71,79 @@ main h2 {
     background-color: #3ba709;
 }
 
-/* main p {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.continuar-google {
-    background-color: #40BCE3;
-    color: white;
-    width: 374px;
-    height: 67px;
-    align-items: center;
-    margin-bottom: 25px;
-
-    display: flex;
-    justify-content: space-around;
-}
-
-#google {
-    width: 42px;
-    height: 42px;
-}
-
-#texto-google {
-    font-size: 23px;
-    padding-top: 27px;
-}
-
-.continuar-facebook {
-    background-color: #1976D2;
-    color: white;
-    width: 374px;
-    height: 67px;
-    align-items: center;
-    margin-bottom: 20px;
-
-    display: flex;
-    justify-content: space-around;
-}
-
-#facebook {
-    width: 42px;
-    height: 42px;
-}
-
-#texto-facebook {
-    font-size: 23px;
-    padding-top: 30px;
-} */
-
 #cadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: black;
     font-size: 20px;
     text-decoration: none;
-    padding: 0px 10px;
 }
+
+main a span {
+    margin-left: 6px;
+}
+
+
+@media screen and (min-width:1536px) and (max-width:1537px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 500px;
+        margin-top: 0px
+    }
+
+    main {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main h2 {
+        margin-top: 0px;
+        font-size: 35px;
+    }
+
+    #email {
+        width: 674px;
+        height: 75px;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    
+    #password {
+        width: 674px;
+        height: 75px;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    #entrar {
+        width: 674px;
+        height: 75px;
+    }
+
+    #cadastrar {
+        font-size: 25px;
+    }
+
+    span{
+        margin-left: 6px;
+        transition: all .55s ease-in-out;
+        text-decoration: underline;
+        transform: scaleX(0.9);
+        letter-spacing: 1px;
+    }
+
+    span:hover{
+        color:#3FC500;
+        text-decoration: none;
+        transform: scaleX(0.95);
+    }
+};

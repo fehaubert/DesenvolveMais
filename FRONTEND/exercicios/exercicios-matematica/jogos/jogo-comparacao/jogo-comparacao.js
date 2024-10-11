@@ -28,7 +28,7 @@ function checkAnswer() {
     }
 
     totalQuestions++;
-    setTimeout(generateComparacao, 5000);
+    setTimeout(generateComparacao, 3000);
 }
 
 function endGame() {
@@ -46,7 +46,7 @@ function resetGame() {
 }
 
 function goToHome() {
-    window.location.href = '../../../../exercicios/exercicios-matematica/exercicios-matematica.html';
+    window.location.href = '../../exercicios-matematica.html';
 }
 
 generateComparacao();
