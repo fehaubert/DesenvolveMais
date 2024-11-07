@@ -126,6 +126,10 @@ footer span.material-symbols-outlined {
     color: #3FC500;
 }
 
+footer img {
+    display: none;
+}
+
 @media screen and (min-width:1536px) and (max-width:1537px) {
 
     /* ----------MAIN---------- */
@@ -178,6 +182,7 @@ footer span.material-symbols-outlined {
     footer img{
         display: flex;
         height: 170px;
+        margin-bottom: 28px;
     }
 
     footer h3 {
