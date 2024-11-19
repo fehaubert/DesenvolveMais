@@ -21,11 +21,9 @@ async function handleSubmit(event) {
         if (result.success && result.data) {
             console.log(result.data);
 
-            // Salva o ID do usuário e o nome no localStorage
             localStorage.setItem('userId', result.data.id);
             localStorage.setItem('userName', result.data.name);
 
-            // Redireciona para a página inicial
             window.location.href = "../tela_principal/home.html";
         } else {
             swal({

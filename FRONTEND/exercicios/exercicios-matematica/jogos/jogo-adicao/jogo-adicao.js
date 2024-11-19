@@ -1,7 +1,7 @@
 let num1, num2;
 let correctAnswers = 0;
 let totalQuestions = 0;
-const maxQuestions = 1;
+const maxQuestions = 15;
 
 function generateEquacao() {
     if (totalQuestions < maxQuestions) {

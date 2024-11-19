@@ -15,35 +15,35 @@ const items = [
         options: ['G', 'I', 'H']
     },
     {
-            image: 'img/livros.jpg',
-            correctLetter: 'L',
-            options: ['K', 'J', 'L']
-        },
-        {
-            image: 'img/maca.jpg',
-            correctLetter: 'M',
-            options: ['O', 'N', 'M']
-        },
-        {
-            image: 'img/pato.jpeg',
-            correctLetter: 'P',
-            options: ['R', 'Q', 'P']
-        },
-        {
-            image: 'img/uva.webp',
-            correctLetter: 'U',
-            options: ['T', 'S', 'U']
-        },
-        {
-            image: 'img/ventilador.webp',
-            correctLetter: 'V',
-            options: ['V', 'X', 'W']
-        },
-        {
-            image: 'img/zebra.jpg',
-            correctLetter: 'Z',
-            options: ['Z', 'Y']
-        }
+        image: 'img/livros.jpg',
+        correctLetter: 'L',
+        options: ['K', 'J', 'L']
+    },
+    {
+        image: 'img/maca.jpg',
+        correctLetter: 'M',
+        options: ['O', 'N', 'M']
+    },
+    {
+        image: 'img/pato.jpeg',
+        correctLetter: 'P',
+        options: ['R', 'Q', 'P']
+    },
+    {
+        image: 'img/uva.webp',
+        correctLetter: 'U',
+        options: ['T', 'S', 'U']
+    },
+    {
+        image: 'img/ventilador.webp',
+        correctLetter: 'V',
+        options: ['V', 'X', 'W']
+    },
+    {
+        image: 'img/zebra.jpg',
+        correctLetter: 'Z',
+        options: ['Z', 'Y']
+    }
 ];
 
 let currentIndex = 0;
